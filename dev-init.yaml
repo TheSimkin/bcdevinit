@@ -5,18 +5,18 @@ packages:
   - fish
   - emacs
 runcmd:
-  - sudo useradd sdegabri
-  - sudo cd /home/sdegabri
-  - sudo mkdir .ssh
-  - sudo chown sdegabri .ssh
-  - sudo chmod 600 .ssh
-  - sudo cd .ssh
-  - sudo bash -c "wget -q -0 - https://github.com/TheSimkin.key > authorized_keys"
-  - sudo chown sdegabri authorized_keys
-  - sudo chmod 600 authorized_keys
-  - sudo git clone https://github.com/syl20bnr/spacemacs /home/sdegabri/.emacs.d
-  - sudo usermod -s /usr/bin/fish sdegabri
-  - sudo mkdir /home/sdegabri/bin
-  - sudo bash -c "wget -q -O -  https://github.com/Tonkpils/snag/releases/download/v1.2.0/snag-linux-amd64.tgz > /home/sdegabri/bin/snag-linux-amd64.tgz"
-  - sudo tar -xzvf /home/sdegabri/bin/snag-linux-amd64.tgz -C /home/sdegabri/bin
+  - useradd sdegabri
+  - cd /home/sdegabri
+  - mkdir .ssh
+  - chown sdegabri .ssh
+  - chmod 600 .ssh
+  - cd .ssh
+  - bash -c "wget -q -0 - https://github.com/TheSimkin.key > authorized_keys"
+  - chown sdegabri authorized_keys
+  - chmod 600 authorized_keys
+  - git clone https://github.com/syl20bnr/spacemacs /home/sdegabri/.emacs.d
+  - usermod -s /usr/bin/fish sdegabri
+  - mkdir /home/sdegabri/bin
+  - bash -c "wget -q -O -  https://github.com/Tonkpils/snag/releases/download/v1.2.0/snag-linux-amd64.tgz > /home/sdegabri/bin/snag-linux-amd64.tgz"
+  - tar -xzvf /home/sdegabri/bin/snag-linux-amd64.tgz -C /home/sdegabri/bin
 
