@@ -1,0 +1,27 @@
+#cloud-config
+runcmd:
+  - sudo apt-get update
+  - sudo apt-get -y upgrade
+  - sudo apt-get -y install docker.io
+  - sudo docker pull colstrom/ruby
+  - sudo apt-get -y install ruby
+  - sudo apt-get -y install fish
+  - sudo apt-get -y install emacs
+  - useradd sdegabri
+  - cd /home/sdegabri
+  - sudo mkdir .ssh
+  - sudo chown sdegabri .ssh
+  - sudo chmod 600 .ssh
+  - sudo cd .ssh
+  - sudo curl https://github.com/TheSimkin.key > authorized_keys
+  - sudo chown sdegabri authorized_keys
+  - sudo chmod 600 authorized_keys
+  - git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+  - cd ~/.emacs.d
+  - git pull --rebase
+  - #Somehow need to create the default path to ~/bin ??
+  - sudo usermod -s /usr/bin/fish ubuntu
+  - mkdir ~/bin
+  - cd ~/bin
+  - wget https://github.com/Tonkpils/snag/releases/download/v1.2.0
+  - tar -xzvf snag-linux-amd64.tgz
