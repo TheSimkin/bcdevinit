@@ -1,12 +1,10 @@
 #cloud-config
+apt_update: true
+packages:
+  - ruby
+  - fish
+  - emacs
 runcmd:
-  - sudo apt-get update
-  - sudo apt-get -y upgrade
-  - sudo apt-get -y install docker.io
-  - sudo docker pull colstrom/ruby
-  - sudo apt-get -y install ruby
-  - sudo apt-get -y install fish
-  - sudo apt-get -y install emacs
   - sudo useradd sdegabri
   - sudo cd /home/sdegabri
   - sudo mkdir .ssh
