@@ -6,6 +6,7 @@ packages:
   - emacs
 
 users:
+  - default
   - name: sdegabri
     gecos: Stephen
     sudo: ALL=(ALL) NOPASSWD:ALL
