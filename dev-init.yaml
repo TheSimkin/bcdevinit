@@ -5,15 +5,3 @@ packages:
   - fish
   - emacs
 
-users:
-  - default
-  - name: sdegabri
-    gecos: Stephen
-    sudo: ALL=(ALL) NOPASSWD:ALL
-    groups: users, admin
-    ssh-import-id: None
-    lock_passwd: true
-    ssh-authorized_keys:
-      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN+3PaIL074HNLQC/TV93MutDVdFhemcjTpiGpePaJna
-      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILv/iUCXkxRzPm01sdDG9IJ4gbO3pqTovTS0g2c+6qIx
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCkPBZCJuBOXBkzNGPOY3lHyKyuIDwP768koB8LIWHWwRtImHvOWeKb1mF9Jq+t2roOpl0qSVzpFIswpPgMARuHOV3gPMtKADaHijtyQloMCQyswD8EVlOMW1EuJbC1VOhJ7Dywmtr0H7qSFpdul8FJMD8ATK1cqLXsMXNorljO/CC12FPq72vqY5EXcxSp8wO5u/yW+P+X/E/Zeq3aiFafyAyQ+NyV8aySkeAfWqy4uGa3Y8aT350Ek5CD/yctmla34A3ajuCwRw4sPb6VEdCz69k7y7ZCzcuN/rI6r44XO9CDNbLUVg9hWYaRGvfRrk9gWYj58wA+01pgFkGCE0s8DeeM4cgH+aB6edgkE6rzTsR1MKzhGbxoV5eJxtHoDvXzc0u6stTJXY0FLH0KIJp70QboK+tM8klcf4LWYXJcJzeK94CwKsmCHgPnHKJrqD1AHpLYEgDNhJfaXHlQry68lLxxpV7sZFr8jGr2gZs3aTkQ5mWPNf9K4KHMTIXHhMGiAp6J29MpQfUiVtbBLNs7Y0SHYEuzo9XXFWKAltlBt1CiUjo1T5elrEv9/4C+GZBt5XkaC5H6RmjjS+DltxjG9M3vGSJ/nnXCUYwcIWC5ySbbE+DLXDeq1qXzp6zGxHlOF8BDMId6SgiLoji8BvbBPKtQpYAmZuIEhkyNLKE3MQ==
